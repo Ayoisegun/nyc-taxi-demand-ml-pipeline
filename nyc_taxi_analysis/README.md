@@ -71,7 +71,7 @@ WHERE
     predicted_trips > 500
 ORDER BY 
     predicted_trips DESC
-LIMIT 100;```
+LIMIT 100;
 
 🚀 How To Run This Project Locally
 1. Prerequisites
