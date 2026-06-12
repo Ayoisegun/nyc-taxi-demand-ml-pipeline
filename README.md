@@ -57,6 +57,7 @@ The model was configured as a `boosted_tree_regressor` (XGBoost) using BigQuery 
 The downstream dbt pipeline automatically materializes production predictions into a clean analytics mart table (`fct_demand_predictions`). This layer allows internal analysts, dispatch operations, and product teams to dynamically query future demand hot-spots directly using SQL:
 
 -- Querying predicted high-demand hotspots for dispatch optimization
+```sql
 SELECT 
     pickup_datetime_tohr,
     spatial_pickup_latitude,
@@ -71,6 +72,7 @@ WHERE
 ORDER BY 
     predicted_trips DESC
 LIMIT 100;
+```
 
 🚀 How To Run This Project Locally
 
