@@ -1,0 +1,9 @@
+
+version: 2
+
+sources:
+  - name: staging
+    database: nyc-taxi-with-dbt 
+    schema: raw_dataset_taxi    
+    tables:
+      - name: yellow_trips      
