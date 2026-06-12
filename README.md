@@ -1,3 +1,7 @@
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/d8a293ca-4ebf-4df5-8d1b-960d09ba989c" />
+
+
+
 # NYC Taxi Spatial-Temporal Demand Forecasting Pipeline
 
 ## 📌 Executive Summary
