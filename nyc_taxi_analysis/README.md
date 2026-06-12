@@ -71,7 +71,7 @@ WHERE
     predicted_trips > 500
 ORDER BY 
     predicted_trips DESC
-LIMIT 100;
+LIMIT 100;```
 
 🚀 How To Run This Project Locally
 1. Prerequisites
@@ -81,23 +81,24 @@ Python 3.8+ and dbt-bigquery installed.
 
 2. Installation & Setup
 Clone this repository to your machine:
-bash`
+```bash
 git clone [https://github.com/YOUR_GITHUB_USERNAME/nyc-taxi-demand-ml-pipeline.git](https://github.com/YOUR_GITHUB_USERNAME/nyc-taxi-demand-ml-pipeline.git)
-cd nyc-taxi-demand-ml-pipeline`
+cd nyc-taxi-demand-ml-pipeline```
 
 Set up your virtual environment and install dependencies:
 
-Bash`
+```bash
 python -m venv dbt_env
 source dbt_env/bin/activate  # On Windows use: dbt_env\Scripts\activate
 pip install -r requirements.txt'
+```
+Verify your dbt database profile connection:
 
-erify your dbt database profile connection:
-
-Bash`
-dbt debug`
-
+```bash
+dbt debug
+```
 Run the entire transformation and feature engineering pipeline:
 
-Bash`
-dbt run`
+```bash
+dbt run
+```
