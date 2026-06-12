@@ -56,7 +56,6 @@ The model was configured as a `boosted_tree_regressor` (XGBoost) using BigQuery 
 
 The downstream dbt pipeline automatically materializes production predictions into a clean analytics mart table (`fct_demand_predictions`). This layer allows internal analysts, dispatch operations, and product teams to dynamically query future demand hot-spots directly using SQL:
 
-```sql
 -- Querying predicted high-demand hotspots for dispatch optimization
 SELECT 
     pickup_datetime_tohr,
@@ -74,24 +73,17 @@ ORDER BY
 LIMIT 100;
 
 🚀 How To Run This Project Locally
-1. Prerequisites
-A Google Cloud Platform (GCP) account with BigQuery enabled.
 
+### 1. Prerequisites
+A Google Cloud Platform (GCP) account with BigQuery enabled.
 Python 3.8+ and dbt-bigquery installed.
 
-2. Installation & Setup
+### 2. Installation & Setup
 Clone this repository to your machine:
+
 ```bash
 git clone [https://github.com/YOUR_GITHUB_USERNAME/nyc-taxi-demand-ml-pipeline.git](https://github.com/YOUR_GITHUB_USERNAME/nyc-taxi-demand-ml-pipeline.git)
-cd nyc-taxi-demand-ml-pipeline```
-
-Set up your virtual environment and install dependencies:
-
-```bash
-python -m venv dbt_env
-source dbt_env/bin/activate  # On Windows use: dbt_env\Scripts\activate
-pip install -r requirements.txt'
-```
+cd nyc-taxi-demand-ml-pipeline
 Verify your dbt database profile connection:
 
 ```bash
